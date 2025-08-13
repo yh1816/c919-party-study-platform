@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C919党建学习平台 - GitHub Pages版本</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        /* 视频容器样式 */
+        .video-container {
+            background-color: #000;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .featured-video {
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+        }
+        .video-caption {
+            padding: 1rem 1.5rem;
+            background-color: rgba(0,0,0,0.8);
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        .video-notice {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .card-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.3s ease;
+        }
+        .card-shadow:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center mr-3">
+                        <i class="fa fa-star text-white text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-red-600">党建引领科技</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="font-medium text-red-600 hover:text-red-700 transition-colors">首页</a>
+                    <a href="#news" class="font-medium text-gray-700 hover:text-red-600 transition-colors">新闻动态</a>
+                    <a href="#study" class="font-medium text-gray-700 hover:text-red-600 transition-colors">学习资料</a>
+                    <a href="#quiz" class="font-medium text-gray-700 hover:text-red-600 transition-colors">知识问答</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <div class="container mx-auto px-4 py-8">
+        <!-- 首页/英雄区域 -->
+        <section id="home" class="mb-16">
+            <div class="text-center mb-12">
+                <h1 class="text-5xl font-bold text-red-600 mb-6">不忘初心<br><span class="text-gray-800">走进C919</span></h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">科技强国，走进C919主题党建研学活动。感悟大国重器，激发使命担当，凝聚奋进力量。</p>
+            </div>
+
+            <!-- 视频播放区域 -->
+            <div class="max-w-4xl mx-auto mb-8">
+                <div class="video-notice">
+                    <i class="fa fa-info-circle mr-2"></i>
+                    <strong>视频播放说明：</strong>视频文件已托管到云存储，可正常播放
+                </div>
+                
+                <div class="video-container">
+                    <video class="featured-video" controls poster="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/74b90464569d4a45830ee3f46e1adb0f~tplv-a9rns2rl98-image.image?rcl=2025081022330135CEA5B95BCA41690601&amp;rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1755441181&amp;x-signature=6BoelD%2BDlLN%2FVjxl7pI2mrfVW%2Fw%3D">
+                        <!-- 视频源 - 使用云存储链接 -->
+                        <source src="https://your-video-storage.com/local-video-1.mp4" type="video/mp4">
+                        <source src="https://your-video-storage.com/local-video-（1）.mp4" type="video/mp4">
+                        <p>您的浏览器不支持HTML5视频播放，请更新浏览器</p>
+                    </video>
+                    <div class="video-caption">
+                        <i class="fa fa-film mr-2"></i>C919大型客机纪录片
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- C919新闻动态 -->
+        <section id="news" class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-red-600 mb-4">C919新闻动态</h2>
+                <div class="w-20 h-1 bg-red-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 新闻卡片 1 -->
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover-scale">
+                    <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/2bb373e0187f4268b1a7716f8207322a~tplv-a9rns2rl98-image.image?rcl=2025080602070440815594D273607915D1&amp;rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1755022024&amp;x-signature=zMcfyAxuBqVdRCrYqIoGp1MAQxE%3D" alt="习近平总书记重要讲话" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-600 mb-3">
+                            <i class="fa fa-calendar-o mr-2 text-red-600"></i>
+                            <span>攻坚克难</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-red-600 hover:text-red-700 transition-colors">
+                            <a href="#">弘扬奋斗精神，激发使命担当</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4">学习航空人"长期奋斗、长期攻关、长期吃苦、长期奉献"的航空报国精神，激发党员干部干事创业的内生动力和担当作为使命感</p>
+                        <a href="#" class="text-red-600 font-medium hover:text-red-700 inline-flex items-center">
+                            阅读全文 <i class="fa fa-angle-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 新闻卡片 2 -->
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover-scale">
+                    <img src="https://p3-search.byteimg.com/obj/labis/33cc1d9630c260fda4b78df6c9c750a0" alt="党史学习教育活动" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-600 mb-3">
+                            <i class="fa fa-calendar-o mr-2 text-red-600"></i>
+                            <span>2025年6月5日</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-red-600 hover:text-red-700 transition-colors">
+                            <a href="#">国产大飞机商业运营</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4">6月4日22时21分，中国南方航空由国产大飞机C919执飞的CZ3383次航班从广州白云国际机场起飞，国产大飞机商业运营再添新航线。</p>
+                        <a href="#" class="text-red-600 font-medium hover:text-red-700 inline-flex items-center">
+                            阅读全文 <i class="fa fa-angle-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 新闻卡片 3 -->
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover-scale">
+                    <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/96f73a3760e54ad1b68a0bc6a1b92298~tplv-a9rns2rl98-image.image?rcl=202508060204535268583EAA002B5099C2&amp;rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1755021894&amp;x-signature=vQPqvslO7jogDyvzmDXqVSHK%2B0c%3D" alt="党风廉政建设会议" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-600 mb-3">
+                            <i class="fa fa-calendar-o mr-2 text-red-600"></i>
+                            <span>2025年8月2日</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-red-600 hover:text-red-700 transition-colors">
+                            <a href="#">中国工程院院士张彦仲接受央视专访</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4">C919大飞机有了国产心！中国工程院院士张彦仲在央视专访中透露，国产CJ-1000A航空发动机研发进展顺利！</p>
+                        <a href="#" class="text-red-600 font-medium hover:text-red-700 inline-flex items-center">
+                            阅读全文 <i class="fa fa-angle-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 学习资料 -->
+        <section id="study" class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-red-600 mb-4">学习资料</h2>
+                <div class="w-20 h-1 bg-red-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover-scale">
+                    <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/9cff479417a544fbb12fed165257d0cd~tplv-a9rns2rl98-image.image?rcl=202508102232499A830EFC39BCF118115B&amp;rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1755441170&amp;x-signature=jt9Zhf2irSNryOPJbTdvc4GMLuc%3D" alt="C909飞机" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-red-600">C909飞机</h3>
+                        <p class="text-gray-600 mb-4">C909飞机是我国首次按照国际民航规章自行研制、具有自主知识产权的中短程新型涡扇支线客机，座级78-97座，航程2225-3700公里。</p>
+                        <a href="#" class="text-red-600 font-medium hover:text-red-700 inline-flex items-center">
+                            查看详情 <i class="fa fa-angle-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover-scale">
+                    <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/74b90464569d4a45830ee3f46e1adb0f~tplv-a9rns2rl98-image.image?rcl=2025081022330135CEA5B95BCA41690601&amp;rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1755441181&amp;x-signature=6BoelD%2BDlLN%2FVjxl7pI2mrfVW%2Fw%3D" alt="C919大型客机" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-red-600">C919大型客机</h3>
+                        <p class="text-gray-600 mb-4">C919大型客机是我国首次按照国际通行适航标准自行研制、具有自主知识产权的喷气式干线客机，座级158-192座，航程4075-5555公里。</p>
+                        <a href="#" class="text-red-600 font-medium hover:text-red-700 inline-flex items-center">
+                            查看详情 <i class="fa fa-angle-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover-scale">
+                    <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/80a729c23a4b4cbc8bc641626dc86930~tplv-a9rns2rl98-image.image?rcl=20250810223329894B6E446D8FAE5431AE&amp;rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1755441210&amp;x-signature=dzCG3e5PokCuYN1xHucF4qj1GGs%3D" alt="C929远程宽体客机" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-red-600">C929远程宽体客机</h3>
+                        <p class="text-gray-600 mb-4">C929是我国首次按照国际通行适航标准自行研制、具有自主知识产权的喷气式远程宽体客机。C929基本型座级280座，航程12000公里。</p>
+                        <a href="#" class="text-red-600 font-medium hover:text-red-700 inline-flex items-center">
+                            查看详情 <i class="fa fa-angle-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 知识问答 -->
+        <section id="quiz" class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-red-600 mb-4">知识问答</h2>
+                <div class="w-20 h-1 bg-red-600 mx-auto"></div>
+                <p class="mt-4 text-gray-600">测试您对C919大型客机的了解程度</p>
+            </div>
+            
+            <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-lg p-8">
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold mb-4">C919知识挑战</h3>
+                    <p class="text-gray-600">请回答以下问题：</p>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h4 class="font-semibold mb-2">问题1: C919大型客机的最大航程大约是多少公里？</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q1" value="A" class="mr-2">
+                                <span>3000公里</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q1" value="B" class="mr-2">
+                                <span>5500公里</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q1" value="C" class="mr-2">
+                                <span>8000公里</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q1" value="D" class="mr-2">
+                                <span>10000公里</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h4 class="font-semibold mb-2">问题2: C919大型客机的座级范围是？</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q2" value="A" class="mr-2">
+                                <span>50-80座</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q2" value="B" class="mr-2">
+                                <span>90-120座</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q2" value="C" class="mr-2">
+                                <span>158-168座</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q2" value="D" class="mr-2">
+                                <span>200-300座</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-6 text-center">
+                    <button class="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transition-colors">
+                        提交答案
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 部署信息 -->
+        <section class="mb-16">
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                    <i class="fa fa-rocket mr-2"></i>GitHub Pages部署信息
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">当前状态</h3>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>✅ 网页结构已优化</li>
+                            <li>✅ 视频路径已修复</li>
+                            <li>✅ 响应式设计完成</li>
+                            <li>⏳ 等待视频托管完成</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">下一步操作</h3>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>1. 上传视频到云存储</li>
+                            <li>2. 更新视频链接</li>
+                            <li>3. 推送到GitHub</li>
+                            <li>4. 启用GitHub Pages</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">C919党建学习平台 - GitHub Pages版本</p>
+            <p class="text-sm text-gray-400">© 2025 党建引领科技. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
