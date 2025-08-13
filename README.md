@@ -1,8 +1,8 @@
 # 党建学习平台 - C919主题研学
 
-这是一个基于Gradio的党建学习平台，专注于C919大型客机主题的研学活动。
+这是一个专注于C919大型客机主题的党建学习平台，采用响应式设计，支持桌面和移动设备访问。
 
-## 功能特点
+## 🌟 功能特点
 
 - 🎯 **C919新闻动态** - 最新的C919相关新闻和动态
 - 📚 **学习资料** - 大飞机诞生之路、飞行安全介绍等学习资料
@@ -10,79 +10,82 @@
 - 📱 **响应式设计** - 支持桌面和移动设备
 - 🎥 **视频播放** - 集成C919纪录片视频
 
-## 文件结构
+## 🚀 快速访问
+
+网站已部署在GitHub Pages上，可通过以下地址访问：
 
 ```
-├── app.py              # 主应用文件
-├── complete_app.py     # 完整版应用（推荐使用）
-├── index-9.html        # 原始HTML文件
-├── local-video-1.mp4   # C919纪录片视频
-├── requirements.txt    # Python依赖
-└── README.md          # 项目说明
+https://[您的GitHub用户名].github.io/c919-party-study-platform/
 ```
 
-## 本地运行
+## 📁 项目结构
 
-1. 安装依赖：
-```bash
-pip install -r requirements.txt
+```
+├── index.html              # 主页面文件
+├── local-video-1.mp4       # C919纪录片视频（通过GitHub LFS管理）
+├── .gitattributes          # Git LFS配置文件
+├── deploy.sh               # 自动化部署脚本
+└── README.md              # 项目说明
 ```
 
-2. 运行应用：
-```bash
-python complete_app.py
-```
-
-3. 在浏览器中打开：`http://localhost:7860`
-
-## Hugging Face Spaces 部署
-
-### 方法1：使用Hugging Face Spaces
-
-1. 访问 [Hugging Face Spaces](https://huggingface.co/spaces)
-2. 创建新的Space，选择Gradio SDK
-3. 上传以下文件：
-   - `complete_app.py` (重命名为 `app.py`)
-   - `requirements.txt`
-   - `index-9.html`
-   - `local-video-1.mp4`
-
-### 方法2：使用Git
-
-1. 在Hugging Face创建新的Space
-2. 克隆Space仓库：
-```bash
-git clone https://huggingface.co/spaces/YOUR_USERNAME/YOUR_SPACE_NAME
-```
-
-3. 复制文件到仓库：
-```bash
-cp complete_app.py YOUR_SPACE_NAME/app.py
-cp requirements.txt YOUR_SPACE_NAME/
-cp index-9.html YOUR_SPACE_NAME/
-cp local-video-1.mp4 YOUR_SPACE_NAME/
-```
-
-4. 提交并推送：
-```bash
-cd YOUR_SPACE_NAME
-git add .
-git commit -m "Initial commit"
-git push
-```
-
-## 注意事项
-
-- 视频文件较大（约250MB），上传到Hugging Face可能需要一些时间
-- 确保所有文件都在同一目录下
-- 如果视频文件无法加载，应用会自动回退到原始HTML内容
-
-## 技术栈
+## 🛠️ 技术栈
 
 - **前端**: HTML5, CSS3, JavaScript, Tailwind CSS
-- **后端**: Python, Gradio
-- **部署**: Hugging Face Spaces
+- **视频处理**: GitHub LFS (Large File Storage)
+- **部署**: GitHub Pages
 
-## 许可证
+## 📖 使用说明
 
-本项目仅供学习和研究使用。 
+### 本地运行
+
+1. 克隆仓库：
+```bash
+git clone https://github.com/[您的用户名]/c919-party-study-platform.git
+cd c919-party-study-platform
+```
+
+2. 在浏览器中打开 `index.html` 文件
+
+### 部署到GitHub Pages
+
+1. 运行部署脚本：
+```bash
+./deploy.sh
+```
+
+2. 按照脚本提示完成GitHub Pages设置
+
+## 🎥 视频说明
+
+- 视频文件通过GitHub LFS进行管理，确保大文件能够正常处理
+- 支持HTML5视频播放，兼容现代浏览器
+- 视频文件大小：约250MB
+
+## 🔧 维护和更新
+
+如需更新网站内容：
+
+1. 修改相关文件
+2. 运行部署脚本：
+```bash
+./deploy.sh
+```
+
+GitHub Pages会自动重新部署您的网站。
+
+## 📞 技术支持
+
+如有问题，请检查：
+
+1. 确保GitHub LFS已正确配置
+2. 检查视频文件是否正确上传
+3. 确保GitHub Pages设置正确
+4. 等待几分钟让部署完成
+
+## 📄 许可证
+
+本项目仅供学习和研究使用。
+
+---
+
+**党建学习平台** - 传承红色基因，牢记初心使命 
